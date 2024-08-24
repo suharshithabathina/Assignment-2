@@ -1,0 +1,7 @@
+S1 = "what"
+S2 = "watch"
+matches = 0
+for i in range(len(S1)):
+    if S1[i] == S2[i]:
+        matches += 1
+print(matches)
