@@ -1,0 +1,10 @@
+strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
+anagrams = {}
+for word in strs:
+    key = ''.join(sorted(word))
+    if key in anagrams:
+        anagrams[key].append(word)
+    else:
+        anagrams[key] = [word]
+result = list(anagrams.values())
+print(result)
